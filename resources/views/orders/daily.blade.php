@@ -44,6 +44,7 @@
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
     </script>
+
     <h2>最近三月订单统计</h2>
     <table class="table table-bordered table-striped">
         <tr>
@@ -70,14 +71,14 @@
             },
             tooltip: {},
             legend: {
-                data:['销量']
+                data:['订单量']
             },
             xAxis: {
                 data:@php echo json_encode(array_keys($dates2))@endphp
             },
             yAxis: {},
             series: [{
-                name: '销量',
+                name: '订单量',
                 type: 'line',
                 data: @php echo json_encode(array_values($dates2))@endphp
             }]

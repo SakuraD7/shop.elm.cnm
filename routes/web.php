@@ -53,6 +53,8 @@ Route::get('order/delivery/{order}','OrderController@delivery')->name('order.del
 Route::get('order/details/{order}','OrderController@details')->name('order.details');
 //订单量统计
 Route::get('statistics','OrderController@statistics')->name('statistics');
+//菜品销量统计
+Route::get('sales_volume','OrderController@sales_volume')->name('sales_volume');
 
 
 

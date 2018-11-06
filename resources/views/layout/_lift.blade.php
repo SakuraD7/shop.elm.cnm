@@ -27,7 +27,7 @@
             </button>
             <ul class="dropdown-menu">
                 <li><a href="{{ route('statistics') }}">订单量统计</a></li>
-                <li><a href="#">菜品销量统计</a></li>
+                <li><a href="{{ route('sales_volume') }}">菜品销量统计</a></li>
             </ul>
         </div>
         <div class="btn-group" role="group">
